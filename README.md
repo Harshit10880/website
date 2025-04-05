@@ -33,7 +33,6 @@ A full-stack web application to automate faculty proxy assignment and management
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
-- **Email Service:** Nodemailer (HTML email support)
 
 ---
 
