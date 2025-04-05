@@ -2,7 +2,6 @@ const express = require("express");
 const path = require("path");
 const connect = require("./db");
 const mongoose = require("mongoose");
-const cookieParser = require("cookie-parser");
 const app = express();
 connect();
 app.use(express.json(), cookieParser());
