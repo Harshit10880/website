@@ -28,36 +28,7 @@
             </form>
         </div>
     </center>
-    <script>
-        const uname = document.getElementById("username");
-        const mail = document.getElementById("email");
-        const pass = document.getElementById("pword");
-        async function logger() {
-            event.preventDefault();
-            if (uname.value === "" || mail.value === "")
-                alert("Please fill in all fields");
-            else {
-                await fetch("http://localhost:3000/", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
-                        name: uname.value,
-                        email: mail.value,
-                        password: pass.value
-                    })
-                }).then((res) => {
-                    return res.text();
-                }).then((data) => {
-                    alert(data);
-                }).catch((error) => {
-                    console.log(error);
-                });
-                window.location.href = "http://localhost:3000/#";
-            }
-        }
-    </script>
+    <script src="login.js"></script>
 </body>
 
 </html>
