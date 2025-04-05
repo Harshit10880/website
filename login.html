@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <center>
+        <br /><br />
+        <div class="main">
+            <h1>Log In</h1>
+            <br/>
+            <form>
+                <label for="username">Name</label>
+                <input type="text" id="username">
+                <br /></br />
+                <label for="email">EMail</label>
+                <input type="email" id="email">
+                <br /><br />
+                <label for="pword">Password</label>
+                <input type="password" id="pword">
+                <button onclick="logger()">Log In</button>    
+                <br /><br />
+            </form>
+        </div>
+    </center>
+    <script>
+        const uname = document.getElementById("username");
+        const mail = document.getElementById("email");
+        const pass = document.getElementById("pword");
+        async function logger() {
+            event.preventDefault();
+            if (uname.value === "" || mail.value === "")
+                alert("Please fill in all fields");
+            else {
+                await fetch("http://localhost:3000/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        name: uname.value,
+                        email: mail.value,
+                        password: pass.value
+                    })
+                }).then((res) => {
+                    return res.text();
+                }).then((data) => {
+                    alert(data);
+                }).catch((error) => {
+                    console.log(error);
+                });
+                window.location.href = "http://localhost:3000/#";
+            }
+        }
+    </script>
+</body>
+
+</html>
