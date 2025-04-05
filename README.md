@@ -41,4 +41,4 @@ A full-stack web application to automate faculty proxy assignment and management
 ```bash
 git clone https://github.com/Harshit10880/website.git
 cd .\website
-npm install express mongoose nodemon```
+npm install express mongoose nodemon
