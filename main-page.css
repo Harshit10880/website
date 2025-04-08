@@ -1,0 +1,87 @@
+header {
+    background-color: rgb(121, 144, 221);
+}
+
+header h1{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+header p {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+header nav {
+    /* background-color: aqua; */
+    /* background-color: rgb(121, 144, 221) */
+    background-color: black;
+    /* display: inline; */
+}
+
+header nav ul {
+    /* display: flex; */
+    list-style-type: none;
+    /* justify-content: space-between; */
+    padding: 10px;
+    padding-left: 480px;
+    /* text-align: center; */
+    
+}
+
+header li {
+    display: inline;
+    /* float: left; */
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+header li a {
+    padding: 10px 20px;
+    display: inline-block;
+    /* background-color: lightgreen; */
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header li a:hover {
+    transition: 0.5s;
+    background-color: darkblue;
+}
+
+table {
+    width: 100%;
+    /* border: 2px solid black; */
+    border-collapse: collapse;
+}
+
+table th {
+    border: 2px solid black;
+    /* border-collapse: collapse; */
+    padding: 15px;
+    /* border-bottom: 2px solid black; */
+}
+
+th:hover {
+    background-color: lightgray;
+}
+
+.height {
+    height: 50px;
+}
+
+/* .dropdown .btn {
+    font-size: 16px;
+    color: white;
+    padding: 14px 16px;
+    background-color: chartreuse;
+    margin: 0;
+} */
